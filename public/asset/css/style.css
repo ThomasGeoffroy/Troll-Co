@@ -1,0 +1,26 @@
+
+.cardT {
+   
+    border: 5px black;
+    width: 20 px;
+    height: 20px;
+}
+
+.main {
+    width: max-content;
+    height: max-content;
+    background-color: red;
+}
+
+body {
+    position: relative;
+    width: 100vh;
+    height: 100vh;
+    background-color: green;
+}
+
+.secondStep {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}

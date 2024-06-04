@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Our custom CSS -->
+        <link rel="stylesheet" href="{{ asset('asset/css/style.css') }}">
+        <!-- favicon -->
+        <link rel="shortcut icon" href="" type="image/x-icon">
+    </head>
+    <body>
+
+        {% block body %}
+        <div class="main">
+            <div  class="cardT">
+            Bienvenue sur Troll & Co !
+
+            <button id="firstTrap"> Cliquez ici ! </button>
+            </div>
+
+            <div class="secondStep">
+            Vous trouvez ça moche ?
+            <button id="secondTrap"> Oh que OUI ! </button>
+            <button id="secondBisTrap"> Non je suis aveugle ! </button>
+            </div>
+
+            {# Si OUI au secondStep #}
+
+            <div class="ThirdStep">
+            Merci
+            {# <button id="ThirdTrap"> Oh que OUI ! </button>
+            <button id="ThirdBisTrap"> Non je suis aveugle ! </button> #}
+            </div>
+
+            {# Si NON au secondStep #}
+
+            <div class="ThirdStepBis">
+            Je te recommande un Ophtalmo asap
+            <button id="ThirdTrap"> OK </button> {# redirection vers ThirdStep #}
+            </div>
+            
+
+
+
+
+
+
+         
+        </div>
+        {% endblock %}
+
+
+        {% block javascripts %}
+        <script src="{{ asset('asset/js/api.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>
